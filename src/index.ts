@@ -20,3 +20,23 @@ function calculateTax(money: number, year: number): number {
     }
     return money * 1.3
 }
+
+// object
+let employee: {
+    readonly id: number,
+    name: string
+} = {
+    id: 1,
+    name: 'Mosh'
+}
+
+console.log(employee.id)
+
+// union type 
+function kgTolbs(weight: number | string): number {
+    if (typeof weight === 'number') {
+        return weight * 2.2
+    } else {
+        return parseInt(weight) * 2.2
+    }
+}
