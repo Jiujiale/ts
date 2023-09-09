@@ -12,3 +12,11 @@ let arr:[number, string] = [10, 'Mosh']
 const enum Size {Small = 1 , Medium, Large}
 let mySize: Size = Size.Medium
 console.log(mySize)
+
+// function
+function calculateTax(money: number, year: number): number {
+    if (year < 2022) {
+        return money * 1.2
+    }
+    return money * 1.3
+}
